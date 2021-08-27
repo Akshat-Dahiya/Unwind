@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Treasure Hunt</title>
+        <link rel="stylesheet" href="./main.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form >
+        <h1> Clue 9 </h1>
+		<h4>So you reached this far, how wonderful!</h4>
+		<h4>Well then I wonder if you can pass this!</h4>
+		<h4>Social Conclave the flagship of Social Impact has had a lot of special guest over the years</h4>
+		<h4>But tell me this, out of the following guest from our previous conclave, which one of these was the star performer?</h4>
+		<ol>
+			<li>Sucheta Dalal</li>
+			<li>Jamandas 'JD' Majethia</li>
+			<li>Anuparia Goenka</li>
+			<li>Vivek Oberoi</li>
+			<li>Anuv Jain</li>
+			<li>Pankaja Munde</li>
+		</ol>
+		<h4>NOW! Prove to me that you are worthy of winning!</h4>
+		<h4>hint: feel free to check out the social conclave instagram page</h4>
+        
+        <fieldset>
+        
+          <label for="number">Your Answer</label>
+          <input type="number" id="ans">
+         
+       
+        <button type="submit" onclick="check()">Submit</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+	<script>
+		function check()
+		{
+			if (document.getElementById("ans").value==5)
+				alert("Well it seems you are just as smart as you seem! The code to contiue the heist the code is \"anuvjain\"")
+			else
+				alert("Oh no! Your answer is wrong!")
+		}
+	</script>
+</html>
